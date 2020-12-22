@@ -1,0 +1,33 @@
+mixin header(x='')
+    div(class="header-background "+x)
+        div(class="co-top-btn")
+          a(href="login.html" class="btn-user hvr-push")
+            i.fas.fa-user
+          a(href="add-e3lan.html" class="btn-ads hvr-push")
+            | اضف اعلان
+        div(class="co-main-img-header")
+          div(class="co-img-header")
+            a(href="/" class="co-img-header-2 hvr-grow-rotate")
+                img(class="img-header-1" src=img + "! اووبس.png", alt="")
+                img(class="img-header-2 hvr-wobble-bottom" src=img + "shopping-bag.png", alt="")
+
+
+mixin box()
+    a(href="car-page-details.html" class="co hvr-rotate")
+        img(src=img + "3.png", alt="")
+        h3(class="co-totle-2")
+            | سفينة فضاء
+        div(class="co-content")
+            p
+                span
+                    i(class="fas fa-money-bill-wave-alt")
+                | 550.000 ج.م
+            p
+                span
+                    i(class="far fa-clock")
+                | اليوم:12.30
+            p
+                span
+                    i(class="fas fa-map-marker-alt")
+                | المعادى
+

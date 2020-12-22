@@ -1,0 +1,904 @@
+@import "_variable.sass"
+header
+    // position: relative
+    .header-background
+        background: url($img + 'bg.png') 
+        background-size: 100% 100%
+        height: 100vh
+        padding: 25px
+        &.header-background-2
+            height: 200px
+        .co-top-btn
+            position: absolute
+            top: 10px
+            right: 30px
+            display: flex
+            align-items: center    
+            .btn-user
+                font-size: 30px
+                color: white
+            .btn-ads
+                font-size: 15px
+                font-weight: bold
+                color: $color-3
+                background: $color-1
+                padding: 3px 20px
+                border-radius: 51px
+                margin-right: 10px
+        .co-main-img-header
+            height: 100%
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            @media screen and ( max-width: $xs)
+                margin-top: 30px
+            .co-img-header
+                .co-img-header-2
+                    position: relative
+                    height: 190px
+                    width: 280px
+                    display: block
+                    @media screen and ( max-width: $xs)
+                        width: 200px
+                    .img-header-1
+                        width: 100%
+                        display: block
+                        margin: auto
+                    .img-header-2
+                        position: absolute
+                        width: 50px
+                        left: 51%
+                        top: 101px
+                        @media screen and ( max-width: $xs)
+                            width: 38px
+                            top: 71px
+.co-form
+    margin-top: -73px
+    position: relative
+    .co-form-inline
+        background: linear-gradient(to left, $color-4, $color-3) // new
+        background-size: 100% 100%
+        padding: 30px 24px
+        padding-bottom: 1px // new
+        box-shadow: 6px 11px 12px -7px #976464
+        &.co-form-inline-2
+            background: linear-gradient($color-4, $color-3)
+            padding: 30px 115px
+        .mo-row-1
+            margin-bottom: 20px
+            .form-control
+                padding: 30px 15px
+                @media screen and ( max-width:  $lg)
+                    padding: 20px 15px
+        .mo-row-2
+            margin-bottom: 30px
+            .form-control
+                padding: 25px 15px
+        .input-group-mo-1
+            position: relative
+            .form-control
+                border-radius: 28px
+                border: none
+                font-size: 14px
+                @media screen and ( max-width:  $md)
+                    font-size: 12px
+                font-weight: 600
+                &::placeholder
+                    color: $color-5
+                    opacity: .5
+            .input-group-text-mo-1
+                position: absolute
+                top: 50%
+                left: 15px
+                transform: translateY(-52%)
+                font-size: 30px
+                cursor: pointer
+                color: $color-3
+                &:hover
+                    opacity: .5
+        .btn-group-mo-1
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 100%
+            .btn-search
+                background: white
+                flex: 1
+                border-radius: 30px
+                padding: 15px 0px
+                border: none
+                outline: none !important
+                @media screen and ( max-width:  $lg)
+                    padding: 9px 15px
+                font-size: 14px
+                @media screen and ( max-width:  $md)
+                    font-size: 12px
+                color: $color-5
+.co-main-icons
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    .dropdown
+        width: 158px
+        margin-top: 60px
+        .dropdown-toggle
+            display: flex
+            flex-direction: column
+            align-items: center
+            background: none !important
+            border: none !important
+            outline: none !important
+            box-shadow: none !important
+            padding: 0px
+            &#btn-cars-and-part
+                .span-ico
+                    background-image: linear-gradient($color-3, $color-4)
+            &#btn-mobiles-and-accessories
+                .span-ico
+                    background-image: linear-gradient($color-3,$color-5)
+            &#btn-property
+                .span-ico
+                    background-image: linear-gradient($color-4,$color-5)
+            &#btn-fashion
+                .span-ico
+                    background-image: linear-gradient(rgb(14,195,216),#9e9e9e)
+            &#btn-electronics-and-home-appliances
+                .span-ico
+                    background-image: linear-gradient($color-3, $color-4)
+            &#btn-Pets
+                .span-ico
+                    background-image: linear-gradient($color-3,$color-5)
+            &::after
+                content: ""
+                display: none
+            .span-ico                
+                font-size: 45px
+                width: 100px
+                height: 100px
+                display: flex
+                justify-content: center
+                align-items: center
+                border-radius: 50%
+                margin-bottom: 10px
+            .span-text
+                background: black
+                padding: 7px 0px
+                text-align: center
+                width: 150px
+                margin: 0px 5px
+                overflow: hidden
+                border-radius: 30px
+                font-size: 11px
+                &::after
+                    font-family: "Font Awesome 5 Free"
+                    font-weight: 900
+                    content: "\f0d7"
+                    display: inline-block
+                    font-style: normal
+                    font-variant: normal
+                    text-rendering: auto
+                    -webkit-font-smoothing: antialiased
+                    padding-right: 10px
+.co-title-1
+    border-right: 6px solid #ff8a5c
+    color: #cf455c
+    padding: 10px 15px
+    font-weight: 400
+    font-size: 28px
+    margin-bottom: 37px
+    @media screen and ( max-width: $xs)
+        font-size: 25px
+        
+.all-ads
+    margin-top: 35px
+    padding: 25px 0px
+    &.all-ads-2
+        background: url($img + 'Rectangle 31.png')
+        background-size: cover
+        .featured-ads
+            .row
+                .co
+                    background: white
+    .featured-ads
+        padding: 0px 20px
+        .co-row-box
+            margin-bottom: 25px
+            padding: 10px
+            @media screen and ( max-width:  $xs)
+                padding: 0px
+            .row    
+                .co
+                    background: $color-2
+                    padding-bottom: 25px
+                    border-radius: 25px
+                    overflow: hidden
+                    box-shadow: 2px 3px 5px 0px #bababa
+                    margin-bottom: 30px  
+                    display: block
+                    color: $color-5
+                    transition: all .2s linear
+                    &:hover
+                        box-shadow: 2px 3px 13px 3px #bababa
+                    img
+                        width: 100%
+                        display: block
+                    .co-totle-2
+                       text-align: center
+                       font-weight: 600
+                       margin-top: 20px
+                       margin-top: 20px
+                       font-size: 28px
+                       @media screen and ( max-width:  $xs)
+                           font-size: 25px
+                           
+                    .co-content
+                        padding: 0px 20px
+                        p
+                            margin-bottom: 10px
+                            font-size: 25px
+                            @media screen and ( max-width: $xs  )
+                                font-size: 21px
+                            span
+                                color: $color-3
+                                margin-left: 20px
+.co-nav-pagination
+    margin-top: 46px
+    margin-bottom: 31px
+    .pagination
+        justify-content: center
+        .page-item
+            .page-link
+                margin: 0px 5px
+                background: $color-3
+                color: white
+                font-size: 25px
+                font-weight: 600
+                border-radius: 10px
+                padding: 6px 16px
+.btn-more
+    background: linear-gradient($color-3,$color-4)
+    color: white !important
+    margin: auto
+    display: block
+    width: 300px
+    padding: 7px 0px
+    border-radius: 30px
+    font-size: 26px
+    text-align: center
+.co-description
+    text-align: center
+    background: $color-4
+    color: white
+    padding: 40px 0px
+    .para-1
+        font-weight: 600
+        margin-bottom: 60px
+        font-size: 30px
+        @media screen and ( max-width: $xs)
+            font-size: 25px
+            
+    input
+        border: none
+        outline: none !important
+        display: block
+        margin: auto
+        font-size: 20px
+        font-weight: 600
+        padding: 25px 40px
+        border-radius: 40px
+        width: 600px
+        @media screen and ( max-width:  $sm)
+            width: 90%
+        @media screen and ( max-width:  $xs)
+            padding: 15px 40px
+            
+            
+    .btn-send
+        display: block
+        width: 200px
+        text-align: center
+        background: white
+        padding: 10px 0px
+        margin: auto
+        margin-top: 48px
+        margin-bottom: 18px
+        font-size: 20px
+        font-weight: 600
+        color: $color-4
+        border-radius: 40px
+.co-car-page-details
+    background: $color-2
+    padding: 1px
+    .co-1
+        padding: 0px 30px
+        @media screen and ( max-width: $xs)
+            padding: 0px 0px
+            
+        .title-1
+            font-size: 30px
+            font-weight: 700
+            margin-top: 35px
+        .para-1
+            font-size: 21px
+            color: $color-4
+        .co-right
+            .co-img-1
+                position: relative
+                .magnific-ico
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%)
+                    color: white
+                    font-size: 60px
+                    display: none
+                &:hover
+                    cursor: zoom-in
+                    // background: #0000007e
+                    background: black
+                    .magnific-ico
+                        display: block
+                    .img-1
+                        opacity: .5
+                .img-1
+                    display: block
+                    width: 100%
+            .co-flex-1
+                display: flex
+                justify-content: center
+                margin-top: 30px
+                margin-bottom: 50px
+                @media screen and ( max-width: $xs)
+                    flex-direction: column
+                .link
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    padding: 0px 20px
+                    font-size: 24px
+                    @media screen and ( max-width: $md)
+                        font-size: 20px
+                    &.link-1
+                        color: $color-3
+                        @media screen and ( max-width: $xs)
+                            margin-bottom: 30px
+                            
+                    &.link-2
+                        color: $color-4
+                    .span-ico
+                        font-size: 28px
+            .co-output
+                background: white
+                border-radius: 47px
+                margin-bottom: 35px
+                line-height: 40px
+                font-size: 22px
+                padding: 15px 40px
+                @media screen and ( max-width: $md)
+                    font-size: 16px
+                    padding: 6px 20px
+                @media screen and ( max-width: $xs)
+                    text-align: center
+                    border-radius: 25px
+                &.co-output-2
+                    padding: 32px 0
+                    text-align: center
+                    box-shadow: 1px 2px 4px 0px #c1c1c1
+                    border-radius: 39px
+                    margin-bottom: 60px
+                    @media screen and ( max-width: $xs)
+                        border-radius: 25px
+                        
+            .title-co-output
+                font-weight: 600
+                color: $color-3
+                margin-bottom: 25px
+                margin-right: 29px
+                font-size: 29px
+                @media screen and ( max-width: $md)
+                    font-size: 26px
+            textarea
+                display: block
+                width: 100%
+                border: none
+                resize: none
+                height: 230px
+                border-radius: 20px
+                padding: 21px
+                font-size: 20px
+                box-shadow: 1px 2px 4px 0px #c1c1c1
+                outline: none !important
+                &::placeholder
+                    color: #9b9b9b
+            .btn-send
+                display: block
+                text-align: center
+                background: red
+                color: white
+                border-radius: 30px
+                background: linear-gradient($color-3,$color-4)
+                margin: auto
+                margin-top: 130px
+                margin-bottom: 70px
+                box-shadow: -1px 2px 7px 1px #979696
+                padding: 15px 0px
+                font-size: 24px
+                width: 300px
+                @media screen and ( max-width: $md)
+                    font-size: 20px
+                    padding: 10px 0px
+                    width: 250px
+        .co-left
+            padding: 0px 40px
+            @media screen and ( max-width: $lg)
+                padding: 0px 0px
+            @media screen and ( max-width: $sm)
+                width: 400px
+                margin: auto
+            @media screen and ( max-width: $xs)
+                width: 100%
+            .balance
+                color: $color-3
+                font-size: 50px
+                background: white
+                text-align: center
+                border-radius: 30px
+                padding: 10px
+                box-shadow: 2px 2px 3px 0px #d3d1d1
+                @media screen and ( max-width: $lg)
+                    font-size: 40px
+                @media screen and ( max-width: $md)
+                    font-size: 32px
+            .btn-send-message
+                display: block
+                background: $color-3
+                width: 100%
+                color: white
+                font-size: 27px
+                padding: 11px 0px
+                border-radius: 50px
+                margin-bottom: 50px
+                margin-top: 89px
+                @media screen and ( max-width: $md)
+                    font-size: 24px
+            .btn-call
+                display: block
+                background: $color-4
+                width: 100%
+                color: white
+                font-size: 27px
+                padding: 11px 0px
+                border-radius: 50px
+                @media screen and ( max-width: $md)
+                    font-size: 24px
+            .co-profile
+                background: white
+                border-radius: 15px
+                margin-top: 93px
+                padding: 1px
+                .co-flex-1
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    .co-ico
+                        font-size: 46px
+                        padding-left: 20px
+                        @media screen and ( max-width: $md)
+                            font-size: 40px
+                    .co-text
+                        text-align: center
+                        color: $color-3
+                        .para-name
+                            font-size: 35px
+                            @media screen and ( max-width: $md)
+                                font-size: 18px
+                        .para-date
+                            font-size: 18px
+                            @media screen and ( max-width: $md)
+                                font-size: 14px
+                .link-ads
+                    color: black
+                    display: block
+                    width: 100%
+                    text-align: center
+                    font-size: 18px
+                    margin-bottom: 20px
+                    @media screen and ( max-width: $md)
+                        margin-bottom: 12px
+            .co-advice
+                background: $color-5
+                color: white
+                padding: 10px
+                border-radius: 20px
+                margin-top: 40px
+                box-shadow: 2px 4px 6px 0px #a6a6a6
+                @media screen and ( max-width: $sm)
+                    margin-bottom: 70px
+                    
+                .title-adivce
+                    font-size: 24px
+                    text-align: center
+                    margin-top: 20px
+                    margin-bottom: 30px
+                    @media screen and ( max-width: $md)
+                        font-size: 21px
+                    
+                ul
+                    padding-right: 0px
+                    li
+                        list-style-type: none
+                        height: 75px
+                        line-height: 33px
+                        font-size: 18px
+                        // display: flex
+                        @media screen and ( max-width: $md)
+                            height: auto
+                            font-size: 14px
+                        &::before
+                            content: ''
+                            display: inline-block
+                            border-radius: 50%  
+                            width: 15px
+                            height: 15px
+                            background: $color-4
+                            margin-left: 5px
+                            margin-top: 10px
+.co-add-ads
+    background: $color-2
+    padding: 30px 40px
+    padding-bottom: 150px
+    @media screen and ( max-width: $md)
+        padding: 30px 0px
+    .co-1
+        background: rgb(236,236,236)
+        padding: 30px
+        box-shadow: 0px 4px 6px #cfcfcf
+        border-radius: 30px
+        .co-right
+            .co-input
+                margin-bottom: 20px
+                label
+                    display: block
+                    width: 100%
+                    text-align: center
+                    font-size: 22px
+                    color: $color-4
+                    font-weight: 700
+                    margin-bottom: 15px
+                    @media screen and ( max-width: $md)
+                        font-size: 15px
+                input
+                    display: block
+                    width: 100%
+                    border: 0px
+                    outline: none !important
+                    padding: 20px 20px
+                    border-radius: 30px
+                    color: $color-4
+                    font-size: 23px
+                    font-weight: 600
+                    @media screen and ( max-width: $md)
+                        font-size: 16px
+                        padding: 12px 20px
+                textarea
+                    @extend input   
+                    height: 250px
+                    display: block
+                    resize: none
+                .co-select
+                    position: relative
+                    &::after
+                        $x: 20
+                        top: 25px
+                        @media screen and ( max-width: $md)
+                            $x: 15
+                            top: 18px
+                        $y: ($x/2)+2
+                        content: '' 
+                        border-top: $x+px solid $color-4
+                        border-bottom: $y+px solid  transparent
+                        border-right: $y+px solid transparent
+                        border-left: $y+px solid  transparent
+                        position: absolute
+                        left: 30px
+                        
+                    select
+                        @extend input
+                        appearance: none
+            .co-extensions
+                margin-top: 33px
+                margin-bottom: 50px
+                .title-etensions
+                    display: block
+                    width: 100%
+                    font-size: 22px
+                    color: $color-4
+                    font-weight: 700
+                    margin-bottom: 15px
+                .co-checkbox
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: center
+                    .custom-control
+                        margin-bottom: 30px
+                        .custom-control-label
+                            color: $color-4
+                            font-size: 17px
+                            font-weight: 700
+                            padding-left: 30px
+                            &::before,&::after
+                                right: initial
+                                left: 0px
+                                border-radius: 0px
+                                width: 25px
+                                height: 25px
+                                border: none
+                            &::before
+                                background: $color-4
+                            &::after
+                                background-size: 20px
+            .btn-share-ads
+                background: linear-gradient($color-3,$color-4)
+                display: block
+                width: 300px
+                margin: auto
+                color: white
+                padding: 10px 0px
+                border-radius: 26px
+                font-size: 25px
+                margin-top: 80px
+                margin-bottom: 120px
+                border: none
+                outline: none !important
+        .co-left
+            margin-top: 50px
+            img
+                width: 100%
+.co-main-login
+    background: $color-2
+    padding: 120px 40px
+    @media screen and ( max-width: $sm)
+        padding: 60px 20px
+    .co-1
+        display: flex
+        flex: 1
+        box-shadow: 6px 5px 8px #c9c9c9
+        border-radius: 0px 30px 30px 0px
+        overflow: hidden
+        height: 600px
+        @media screen and ( max-width: $md)
+            height: 400px
+        @media screen and ( max-width: $sm)
+            flex-direction: column
+            height: auto
+            border-radius: 0px
+        .co-form-2
+            flex: 1
+            background: white
+            padding: 50px 30px
+            @media screen and ( max-width: $sm)
+                order: 2
+                flex: 400px
+            form   
+                padding: 0px 35px
+                @media screen and ( max-width: $md)
+                    padding: 0px 0px
+                .input-group
+                    input
+                        display: block
+                        width: 100%
+                        margin: auto
+                        border: none
+                        background: $color-3
+                        margin-bottom: 10px
+                        color: white
+                        border-radius: 40px
+                        outline: none !important
+                        padding-right: 65px !important
+                        font-size: 27px
+                        padding: 15px
+                        margin-bottom: 60px
+                        @media screen and ( max-width: $md)
+                            font-size: 20px
+                            padding: 10px
+                            margin-bottom: 30px
+                        &::placeholder
+                            color: white
+                    span
+                        position: absolute
+                        top: 5px
+                        font-size: 36px
+                        right: 18px
+                        color: white
+                        @media screen and ( max-width: $md)
+                            font-size: 25px
+                .btn-login
+                    display: block
+                    width: 250px
+                    text-align: center
+                    margin: auto
+                    background: $color-3
+                    color: white
+                    padding: 10px 0px
+                    border-radius: 30px
+                    box-shadow: 0px 4px 6px #d5d5d5
+                    font-size: 21px
+                    margin-bottom: 60px
+                    border: none
+                    outline: none !important
+                    @media screen and ( max-width: $md)
+                        margin-bottom: 30px
+                        width: 180px
+                        font-size: 18px
+                        padding: 8px 0px
+                .para-alert-1
+                    font-size: 15px
+                    color: $color-3
+                    position: relative
+                    padding-right: 38px
+                    margin-top: 120px
+                    @media screen and ( max-width: $md)
+                        margin-top: 60px
+                    &::after
+                        content: ''
+                        position: absolute
+                        right: 0px
+                        top: 0px
+                        height: 25px
+                        width: 25px
+                        background: $color-4
+                        border-radius: 50%
+                .co-flex
+                    display: flex
+                    justify-content: space-between
+                    a
+                        color: $color-3
+                        font-size: 16px
+        .co-img
+            flex: 1
+            background: linear-gradient($color-3,$color-4)
+            display: flex
+            justify-content: center
+            align-items: center
+            @media screen and ( max-width: $sm)
+                order: 1
+                flex: 300px
+            .co-img-2
+                width: 60%
+                @media screen and ( max-width: $md)
+                    // width: 70%
+                img
+                    width: 100%
+footer
+    padding: 30px 20px
+    background: $color-3
+    .co-1
+        .co-imgs
+            display: block
+            $m-width: 190px
+            $m-mb: 40px
+            position: relative
+            margin: auto
+            margin-bottom: $m-mb
+            width: $m-width
+            @media screen and ( max-width: $md)
+                width: 150px
+                margin-bottom: 20px
+            @media screen and ( max-width: $sm)
+                width: $m-width
+                margin-bottom: $m-mb
+            .img-1
+                width: 100%
+                display: block
+            .img-2
+                $m-width: 35px
+                $m-top: 71px
+                position: absolute
+                right: 26px
+                width: $m-width
+                top: $m-top
+                @media screen and ( max-width: $md)
+                    width: 26px
+                    top: 53px
+                @media screen and ( max-width: $sm)
+                    width: $m-width
+                    top: $m-top
+        .para-1
+            $m-font-size: 14px
+            color: white
+            font-weight: 600
+            line-height: 27px
+            font-size: $m-font-size
+            @media screen and ( max-width: $md)
+                font-size: 11px
+            @media screen and ( max-width: $sm)
+                font-size: $m-font-size
+                text-align: center
+    .co-2
+        ul
+            list-style-type: none
+            padding-right: 0px
+            text-align: center
+            li
+                a
+                    $m-font-size: 17px
+                    color: white
+                    font-weight: 600
+                    text-decoration: none !important
+                    display: inline-block
+                    padding: 5px 0px
+                    font-size: $m-font-size
+                    @media screen and ( max-width: $lg)
+                        font-size: 15px
+                    @media screen and ( max-width: $md)
+                        font-size: 10px
+                    @media screen and ( max-width: $sm)
+                        font-size: $m-font-size
+                    &:hover
+                        color: $color-4
+                        
+    .co-3
+        ul
+            list-style-type: none
+            display: flex
+            justify-content: center
+            padding: 0px
+            li
+                a
+                    $m-font-size: 37px
+                    $m-padding: 0px 15px
+                    color: white
+                    font-weight: 600
+                    text-decoration: none !important
+                    padding: $m-padding
+                    font-size: $m-font-size
+                    @media screen and ( max-width: $md)
+                        font-size: 30px
+                        padding: 0px 5px
+                    @media screen and ( max-width: $sm)
+                        padding: $m-padding
+                        font-size: $m-font-size
+    .co-4
+        text-align: center
+        
+        a
+            $m-width: 235px
+            $m-font-size: 18px
+            display: block
+            margin: auto
+            text-decoration: none !important
+            color: $color-3
+            background: white
+            padding: 12px 0px
+            font-weight: 600
+            border-radius: 30px
+            margin-bottom: 15px
+            width: $m-width
+            font-size: $m-font-size
+            @media screen and ( max-width: $md)
+                width: 200px
+                font-size: 13px
+            @media screen and ( max-width: $sm)
+                width: $m-width
+                font-size: $m-font-size
+            img
+                $m-width: 35px
+                width: $m-width
+                @media screen and ( max-width: $md)
+                    width: 30px
+                @media screen and ( max-width: $sm)
+                    width: $m-width
+        p
+            $m-font-size: 20px
+            line-height: 41px
+            color: white
+            font-size: $m-font-size
+            @media screen and ( max-width: $md)
+                font-size: 16px
+            @media screen and ( max-width: $sm)
+                font-size: $m-font-size
+
+    // @import "_mixin.sass"
+
+

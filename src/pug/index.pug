@@ -1,0 +1,55 @@
+
+extends includes/_layout1.pug
+
+block content            
+    section(class="co-form")
+      form(action="#" class="container")
+        div(class="co-form-inline")
+          div(class="row mo-row-1")
+            div(class="col-sm-5")
+              div(class="input-group-mo-1 mb-3")
+                input(type="text" class="form-control" placeholder="عن ماذا تبحث")
+            div(class="col-sm-5")
+              div(class="input-group-mo-1 mb-3" id="co-input-search-for-a-specific-area")
+                input(type="text" class="form-control" placeholder="ابحث عن منطقة معينة")
+                span(class="input-group-text-mo-1")
+                  i(class="fas fa-caret-down")
+            div(class="col-sm-2")
+              div(class="btn-group-mo-1")
+                input(type="submit" value="ابحث" class="btn-search mb-3 hvr-wobble-skew")
+
+
+    section(class="co-main-icons")
+        -let x = [['cars-and-part','السيارات وقطع الغيار','fas fa-car'],['mobiles-and-accessories','الموبيلات والاكسسوارات','fas fa-mobile-alt'],['property','العقارات','far fa-building'],['fashion','الموضه','fas fa-tshirt'],['electronics-and-home-appliances','الالكترونيات واجهزة منزلية','fas fa-tv'],['Pets','حيوانات اليفه','fas fa-paw']]
+        -for(i in x)
+          div(class="dropdown" id="co-"+x[i][0])
+            button(class="btn btn-secondary dropdown-toggle hvr-wobble-vertical" type="button" id="btn-"+x[i][0] data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+              span(class="span-ico")
+                i(class=x[i][2])
+              span(class="span-text")= x[i][1]
+            div(class="dropdown-menu" aria-labelledby="btn-"+x[i][0])
+              a(class="dropdown-item" href="#") Action
+              a(class="dropdown-item" href="#") Another action
+              a(class="dropdown-item" href="#") Something else here
+
+
+    main(class="all-ads")
+        section(class="featured-ads")
+          .container-fluid
+            h2(class="co-title-1")
+              | الاعلانات المضافة حديثا
+            div(class="co-row-box")
+              .row
+                -for(let i=0; i<6; i++)
+                  .col-lg-4.col-sm-6
+                    +box
+        a(href="cars.html" class="btn-more hvr-grow")
+            | المزيد
+
+
+    section(class="co-description")
+      p(class="para-1")
+        | اشترك معنا ليصلك كل جديد
+      input(placeholder="البريد الالكترونى" type="email")
+      input(type="submit" value="ارسال" class="btn-send hvr-grow")
+

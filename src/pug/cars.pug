@@ -1,0 +1,66 @@
+extends includes/_layout1.pug
+
+block content
+    section(class="co-form")
+        form(action="#" class="container")
+          div(class="co-form-inline co-form-inline-2")
+            div(class="row mo-row-1")
+              div(class="col-4")
+                div(class="input-group-mo-1 mb-3")
+                  input(type="text" class="form-control" placeholder="عن ماذا تبحث")
+              div(class="col-4")
+                div(class="input-group-mo-1 mb-3" id="co-input-search-for-a-specific-area")
+                  input(type="text" class="form-control" placeholder="ابحث عن منطقة معينة")
+                  span(class="input-group-text-mo-1")
+                    i(class="fas fa-caret-down")
+              div(class="col-4")
+                div(class="input-group-mo-1 mb-3" id="co-input-cars")
+                  input(type="text" class="form-control" placeholder="عربيات")
+                  span(class="input-group-text-mo-1")
+                    i(class="fas fa-caret-down")
+            div(class="row mo-row-2")
+              div(class="col-3")
+                div(class="input-group-mo-1 mb-3" id="co-input-type")
+                  input(type="text" class="form-control" placeholder="اختر فئة")
+                  span(class="input-group-text-mo-1")
+                    i(class="fas fa-caret-down")
+              div(class="col-3")
+                div(class="input-group-mo-1 mb-3" id="co-input-year")
+                  input(type="text" class="form-control" placeholder="السنة")
+                  span(class="input-group-text-mo-1")
+                    i(class="fas fa-caret-down")
+              div(class="col-3")
+                div(class="input-group-mo-1 mb-3" id="co-input-motion-vector")
+                  input(type="text" class="form-control" placeholder="ناقل الحركة")
+                  span(class="input-group-text-mo-1")
+                    i(class="fas fa-caret-down")
+              div(class="col-3")
+                div(class="input-group-mo-1 mb-3" id="co-input-case")
+                  input(type="text" class="form-control" placeholder="الحالة")
+                  span(class="input-group-text-mo-1")
+                    i(class="fas fa-caret-down")
+    
+    main(class="all-ads all-ads-2")
+        section(class="featured-ads")
+            .container-fluid
+                h2(class="co-title-1")
+                    | الاعلانات المميزة
+                .co-row-box
+                  .row
+                      -for(let i=0; i<3; i++)
+                          .col-4
+                              +box
+                  h2(class="co-title-1")
+                      | الاعلانات
+                  .row
+                      -for(let i=0; i<6; i++)
+                          .col-4
+                              +box
+                
+        //- button(class="btn-more")
+        //-     | المزيد
+        nav(class="co-nav-pagination" aria-label="Page navigation example")
+            ul(class="pagination")
+              - for(let i = 1; i<6; i++)
+                li(class="page-item hvr-pulse")
+                    a(class="page-link" href="#")=i

@@ -1,0 +1,131 @@
+extends includes/_layout1.pug
+
+block  header
+    +header('header-background-2')
+
+block content
+    main(class="co-add-ads")
+        div(class="container-fluid")
+            h2(class="co-title-1")
+                | اضف اعلان
+            div(class="co-1")
+                .row
+                    .col-sm-6.order-sm-first.order-last
+                        form(action="#" class="co-right")
+                            div(class="co-input")
+                                label(for="inputPassword")
+                                    | اسم الاعلان
+                                input(id="inputPassword")
+                            div(class="co-input")
+                                label(for="inputPassword")
+                                    | صنف اعلانك
+                                div(class="co-select")
+                                    select
+                                        option(value="")
+                                            | عربيات
+                                        option(value="")
+                                            | عربيات
+                                        option(value="")
+                                            | عربيات
+                                        option(value="")
+                                            | عربيات
+                                        option(value="")
+                                            | عربيات
+
+                            div(class="co-input")
+                                label(for="inputPassword")
+                                    | السعر
+                                input(id="inputPassword")
+                            div(class="co-input")
+                                label(for="inputPassword")
+                                    | طريقة الدفع
+                                div(class="co-select")
+                                    select
+                                        option(value="")
+                                            | كاش
+                                        option(value="")
+                                            | كاش
+                                        option(value="")
+                                            | كاش
+                                        option(value="")
+                                            | كاش
+                                        option(value="")
+                                            | كاش
+                            div(class="co-input")
+                                label(for="inputPassword")
+                                    | طريقة الدفع
+                                div(class="co-select")
+                                    select
+                                        option(value="")
+                                            | الموديل
+                                        option(value="")
+                                            | الموديل
+                                        option(value="")
+                                            | الموديل
+                            div(class="co-input")
+                                label(for="inputPassword")
+                                    | طريقة الدفع
+                                div(class="co-select")
+                                    select
+                                        option(value="")
+                                            | السنة
+                                        option(value="")
+                                            | السنة
+                                        option(value="")
+                                            | السنة
+                            div(class="co-input")
+                                label(for="inputPassword")
+                                    | كيلومترات
+                                input(id="inputPassword")
+                            div(class="co-input")
+                                label(for="inputPassword")
+                                    | ناقل الحركة
+                                div(class="co-select")
+                                    select
+                                        option(value="")
+                                            | مانويل
+                                        option(value="")
+                                            | اوتوماتك
+                            div(class="co-input")
+                                label(for="inputPassword")
+                                    | الحالة
+                                div(class="co-select")
+                                    select
+                                        option(value="")
+                                            | مستعمل
+                                        option(value="")
+                                            | جديد
+                            div(class="co-extensions")
+                                h5(class="title-etensions")
+                                    | الاضافات
+                                div(class="co-checkbox")
+                                    - for(let i = 0; i<9; i++)
+                                        div(class="custom-control custom-checkbox")
+                                            input(type="checkbox" checked class="custom-control-input" id="customControlAutosizing-"+i)
+                                            label(class="custom-control-label" for="customControlAutosizing-"+i)
+                                                | فوانيس شبوره
+                            div(class="co-input")
+                                label(for="inputPassword")
+                                    | وصف الاعلان
+                                textarea
+                            div(class="co-input")
+                                label(for="inputPassword")
+                                    | مكان الاعلان
+                                input(id="inputPassword")
+                            div(class="co-input")
+                                label(for="inputPassword")
+                                    | الاسم
+                                input(id="inputPassword")
+                            div(class="co-input")
+                                label(for="inputPassword")
+                                    | الايميل
+                                input(id="inputPassword" type="email")
+                            div(class="co-input")
+                                label(for="inputPassword")
+                                    | رقم الهاتف
+                                input(id="inputPassword")
+
+                            input(type="submit" value="انشر الاعلان" class="btn-share-ads hvr-bounce-in")
+                    .col-sm-6.order-sm-last.order-first
+                        div(class="co-left")
+                            img(src=img + "Group-33.png", alt="")

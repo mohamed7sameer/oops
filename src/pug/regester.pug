@@ -1,0 +1,20 @@
+extends includes/_layout1.pug
+
+block  header
+    +header('header-background-2')
+
+block content
+    section(class="co-main-login")
+        div(class="co-1")
+            div(class="co-form-2")
+                form(action="password.html")
+                    div(class="input-group")
+                        input(type="text"  placeholder="رقم الموبايل")
+                        span(class="span-icon")
+                            <i class="fas fa-user"></i>
+                    input(type="submit" value="دخول" class="btn-login hvr-bounce-in")
+                    p(class="para-alert-1")
+                        | ادخل رقم هاتفك وسوف يتم ارسال رسالة بكلمة المرور
+            div(class="co-img")
+                div(class="co-img-2")
+                    img(src=img + "group-24.png", alt="")

@@ -1,0 +1,94 @@
+extends includes/_layout1.pug
+
+block style1
+    //- Magnific Popup core CSS file
+    <link rel="stylesheet" href="css/libs/magnific-popup.css">
+
+block script1
+    <script src="js/libs/jquery.magnific-popup.min.js"></script>
+    script.
+        $('#img-for-magnific').magnificPopup({
+            items: {
+              src: "assets/imgs/22.png"
+            },
+            type: 'image' // this is default type
+        });
+
+
+block content
+    main(class="co-car-page-details")
+        div(class="container-fluid")
+            div(class="co-1")
+                h3(class="title-1")
+                    | شيفورلية
+                p(class="para-1")
+                    | القاهرة , المعادى | تم اضافة الاعلان فى12:30
+                div(class="row")
+                    div(class="col-md-8")
+                        div(class="co-right")
+                            div(id="img-for-magnific" class="co-img-1")
+                                img(class="img-1" src=img+"22.png", alt="")
+                                span(class="magnific-ico")
+                                    <i class="fas fa-search-plus"></i>
+
+                            div(class="co-flex-1")
+                                a(href="#" class="link link-1")
+                                    span(class="span-ico")
+                                        <i class="far fa-star"></i>
+                                    span
+                                        | اضف الى المفضلة
+                                a(href="#" class="link link-2")
+                                    span(class="span-ico")
+                                        <i class="fas fa-exclamation-circle"></i>
+                                    span
+                                        | الابلاغ عن مشكلة
+                            -let x = [["الموديل:كروز","طريقة الدفع:كاش"],["ناقل الحركة:اوتوماتك","الحالة:مستعمل"],["كيلومترات:70.000","المحرك:1400-1600"],["السنة:2018","اضافات:<br>تكييف<br>تنبيه مضاد للسرقة<br>راديو اف ام<br>اوديو aux مدخل<br>فوانيس شبوره"]]
+                            -for(let i in x)
+                                div(class="row")
+                                    div(class="col-sm-6")
+                                        p(class="co-output")=x[i][0]
+                                    div(class="col-sm-6")
+                                        p(class="co-output")!=x[i][1]
+                            div
+                                h5(class="title-co-output")
+                                    | تفاصيل
+                                p(class="co-output co-output-2")
+                                    | عربية بحالة ممتازة والمعاينة خير دليل ياعزيزى ومش محتاجة مصاريف أى والله
+                            form(action="")
+                                h5(class="title-co-output")
+                                    | ارسال رسالة
+                                textarea(name="" placeholder="اكتب رسالتك")
+                                button(class="btn-send")
+                                    | ارسال
+                    div(class="col-md-4")
+                        div(class="co-left")
+                            p(class="balance")
+                                | 222.000 ج.م
+                            button(class="btn-send-message")
+                                | ارسال رسالة
+                            button(class="btn-call")
+                                | اتصال
+                            div(class="co-profile")
+                                div(class="co-flex-1")
+                                    div(class="co-ico")
+                                        <i class="far fa-user"></i>
+                                    div(class="co-text")
+                                        p(class="para-name")
+                                            | محمد محروس
+                                        p(class="para-date")
+                                            | مسجل منذ ايام الزعامه
+                                a(href="#" class="link-ads")
+                                    | اعلانات هذا المستخدم
+                            div(class="co-advice")
+                                h3(class="title-adivce")
+                                    | سلامتك تهمنا
+                                ul
+                                    li
+                                        | قابل البائع فى مكان عام زى المترو أو المولات أو محطات البنزين
+                                    li
+                                        | خد حد معاك وأنت رايح تقابل أى حد
+                                    li
+                                        | عاين المنتج كويس قبل ماتشترى وتأكد أن سعره مناسب
+                                    li
+                                        | متدفعش أو تحول فلوس الا لما تعاين المنتج كويس
+

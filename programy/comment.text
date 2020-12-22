@@ -1,0 +1,28 @@
+header
+    btn-add-anno -- 21 -- 600
+    title -- 115px -- 700
+
+form
+    input-search -- 19.5px
+    shoose-item -- 19px --600
+    year -- 20px -- 600
+    denamic-move -- 20.5 -- 600
+    status -- 20.5px -- 600
+    cars -- 24.5px -- 600
+
+main-title -- 40px -- 400
+
+co
+    title -- 37.5px -- 700
+    p -- 35px
+
+counter
+    40px -- 600
+
+
+footer
+    right
+        logo 77px -- 700
+        p -- 19px -- 700 -- lineheight: 37px
+    center
+        24.5px 600

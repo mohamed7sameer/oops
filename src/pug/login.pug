@@ -1,0 +1,28 @@
+extends includes/_layout1.pug
+
+block  header
+    +header('header-background-2')
+
+block content
+    section(class="co-main-login")
+        div(class="co-1")
+            div(class="co-form-2")
+                form(action="")
+                    div(class="input-group")
+                        input(type="text"  placeholder="الاسم")
+                        span(class="span-icon")
+                            <i class="fas fa-user"></i>
+                    div(class="input-group")
+                        input(type="الباسورد"  placeholder="كلمة السر")
+                        span(class="span-icon")
+                            <i class="fas fa-lock"></i>
+                    button(class="btn-login hvr-bounce-in")
+                        | دخول
+                    div(class="co-flex")
+                        a(href="password-code.html" class="hvr-bounce-in")
+                            | نسيت كلمة السر
+                        a(href="regester.html" class="hvr-bounce-in")
+                            | انشاء حساب
+            div(class="co-img")
+                div(class="co-img-2")
+                    img(src=img + "group-24.png", alt="")

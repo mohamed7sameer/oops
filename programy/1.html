@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- style="width:791px" -->
+    <img id="img-material" src="1.png"  alt="">
+    <div class="grid-system">
+        <div id="id-container" class="">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </div>
+    <div dir="ltr" id="draggable">
+
+        <div class="font-size">
+            <input type="number" id="input-line-height">
+            <select name="" id="select-font-weight">
+                <option >200</option>
+                <option >300</option>
+                <option >400</option>
+                <option >600</option>
+                <option >700</option>
+                <option >800</option>
+                <option >900</option>
+            </select>
+            <input type="number" id="integer">
+            <input type="number" min="0" max="9" id="float">
+            
+        </div>
+
+        <p id="para" contenteditable="true">
+            ابداع تك .. شريكك التقنى 
+        </p>
+    </div>
+
+    <input id="my-value" type="text">
+    <div class="btns-container">
+        <button onclick="funContainer()" >container</button>
+        <button onclick="funContainerFluid()" >container-fluid</button>
+    </div>
+
+    
+
+    <div dir="rtl" id="left-center">
+        <div class="co-color">
+            <div data-color="red"></div>
+            <div data-color="white"></div>
+            <div data-color="black"></div>
+        </div>
+        <input checked type="checkbox" name="" id="bottom-tools">
+        <br>
+        <div id="co-text-align" dir="rtl">
+            <input type="radio" checked name="textAlign" data-align="right">
+            <input type="radio" name="textAlign" data-align="center">
+            <input type="radio" name="textAlign" data-align="left">
+        </div>
+        <div class="co-bg">
+            <div data-bg="transparent"></div>
+            <div data-bg="red"></div>
+            <div data-bg="white"></div>
+            <div data-bg="black"></div>
+        </div>
+    </div>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://kit.fontawesome.com/1713315dbb.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
